@@ -17,8 +17,9 @@ def main():
 
     create_database("youtube", params)
 
+
     save_data_to_database(data, "youtube", params)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
