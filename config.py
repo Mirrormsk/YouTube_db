@@ -10,8 +10,10 @@ def config(filename="database.ini", section="postgresql"):
     parser.read(filename)
 
     if parser.has_section(section):
+
         params = parser.items(section)
         db = dict(params)
+
     else:
         raise Exception(f"Section {section} is not found in the {filename} file.")
 
